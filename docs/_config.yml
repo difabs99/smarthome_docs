@@ -1,4 +1,4 @@
-title: Zendesk Garden Jekyll Theme
+title: Smart Home - Smart Devices Amplify Project
 remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 
 baseurl: /smarthome_docs
@@ -7,6 +7,7 @@ search_enabled: true
 auto_page_title: true
 
 sidebar:
+  - overview
   - getting-started
   - label: Customization
     children:

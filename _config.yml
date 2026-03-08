@@ -12,6 +12,7 @@ mermaid_enabled: true
 mermaid_theme: forest
 
 sidebar:
+  - overview
   - getting-started
   - label: Customization
     children:

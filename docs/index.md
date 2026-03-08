@@ -4,29 +4,55 @@ title: Zendesk Garden Jekyll Theme
 auto_title: false
 ---
 
-# jekyll-theme-zendesk-garden
+# Smart Home - Smart Devices Amplify Documentation
 
-A Jekyll theme using Zendesk Garden design patterns.
+This project is broken down in the following solutions:
+- Mobile Application Project
+- IoT Smart Device Project
+- The AWS Amplify Cloud Backend
+- IoT Smart Device Provisioning Project
 
-This is was initially possible thanks to the following awesome libraries:
-
-- [`jekyll-postcss` plugin](https://github.com/mhanberg/jekyll-postcss)
-- [`tailwindcss` as a PostCSS plugin](https://tailwindcss.com/docs/installation#add-tailwind-as-a-post-css-plugin)
-- [zendeskgarden/tailwindcss](https://github.com/zendeskgarden/tailwindcss)
-
-> Note: Those have since been removed and any relevant CSS directly included.
 
 ## Usage
 
-### GitHub Pages
+The purpose of this project is to provide an overall end-to-end implementation for others to utilize and quick get through all the initial setups.
 
-Define a `_config.yml` file in your GitHub pages directory and specify this remote theme:
 
-```yaml
-remote_theme: zendesk/jekyll-theme-zendesk-garden@main
-```
+### Project Design
 
-[Full Documentation](https://zendesk.github.io/jekyll-theme-zendesk-garden/)
+The project has the following design choices:
+- Mobile Application for iOS and Android using flutter solution
+- IoT Devices using Espressif ESP32 variant of SoC chip/modules
+- IoT Devices using Espressif ESP-IDF framework
+  - This is mostly build in C Language in the ESP-IDF framework
+- IoT Library framework
+  - FreeRTOS
+    - The Common Logging Library
+  - coreMQTT
+  - coreMQTT-Agent
+  - coreJSON
+  - backoffAlgorithm
+- IoT Espressif Library framework
+  - joltwallet littlefs
+  - Network Provisioning (formally known as WiFi Provisioning)
+  - ESP Secure Certificate Manager
+  - Button library
+  - Led Strip library (to control all WS2812 LEDs types)
+  - ESP IDF version release 6.0
+- AWS Cloud Services
+  - Cognito Authentication Management
+  - IAM Identify Management
+  - CloudWatch Logging
+  - IoT Core
+- AWS Amplify for the backend framework
+  - AppSync API calls
+  - AppSync Custom Resolvers Lambda Functions
+  - Amplify controlled Dynamodb tables
+- Provisioning Tool
+  - Python project
+  - OpenSSL for Certificate creation
+  - Boto3 for AWS Services communication
+
 
 ## Contributing
 
