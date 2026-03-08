@@ -275,6 +275,7 @@ blockquote {
   @extend .flex-shrink;
   @extend .order-1;
   @extend .overflow-auto;
+  @extend .bg-grey-100;
   flex-basis: 0%;
   padding: 28px;
 }
