@@ -1,6 +1,8 @@
 title: Zendesk Garden Jekyll Theme
 description: A Jekyll theme using the Zendesk Garden design patterns
 
+remote_theme: zendesk/jekyll-theme-zendesk-garden@main
+
 permalink: pretty
 
 search_enabled: true
